@@ -19,6 +19,9 @@ add_action( 'widgets_init', 'cbt_widgets_init' );
 include (get_theme_file_path('/inc/cbt_scripts.php'));
 add_action( 'wp_enqueue_scripts', 'cbt_scripts' );
 
+include (get_theme_file_path('/inc/cbt_customizer.php'));
+add_action( 'customize_register', 'cbt_customizer' );
+
 /**
  * Implement the Custom Header feature.
  */
